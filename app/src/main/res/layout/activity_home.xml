@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".HomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:theme="@style/ToolbarColoredBackArrow"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/toolbar_bck">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ski_logo"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="45dp"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/india_logo"
+                android:layout_alignParentEnd="true"
+                />
+
+
+            <!--            <ImageView-->
+<!--                android:layout_width="35dp"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginEnd="33dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginBottom="9dp"-->
+<!--                android:src="@drawable/corona" />-->
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/toolbar"
+        >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:background="@drawable/home_bck"
+        />
+
+        <TextView
+        android:id="@+id/tv1"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/candal"
+        android:gravity="center"
+        android:text="COVID-19"
+        android:textColor="@android:color/black"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+        <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_below="@+id/tv1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        app:srcCompat="@drawable/corona" />
+
+        <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/candal"
+        android:text="Total cases        : "
+        android:textColor="@android:color/black"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t_view1"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/candal"
+            android:textColor="@android:color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/candal"
+        android:text="Total deaths      : "
+        android:textColor="@android:color/black"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t_view2"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/t_view1"
+            android:fontFamily="@font/candal"
+            android:textColor="@android:color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/candal"
+            android:text="Total recovered  : "
+            android:textColor="@android:color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t_view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/t_view2"
+            android:fontFamily="@font/candal"
+            android:textColor="@android:color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/candal"
+        android:text="Active cases      : "
+        android:textColor="@android:color/black"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t_view4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/t_view3"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/candal"
+            android:textColor="@android:color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv1"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:transitionName="cv1_transition"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/cv1_bck"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv2"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_below="@+id/cv1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:transitionName="cv2_transition"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/cv2_bck"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv3"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/cv2"
+            android:layout_marginTop="20dp"
+            android:transitionName="cv3_transition"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/cv3_bck"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

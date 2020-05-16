@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F57B5D</color>
+    <color name="colorPrimaryDark">#FB7078</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="cardview_bck">#FFF1DF</color>
+    <color name="toolbar_bck">#FC9196</color>
+    <color name="ll_bck">#EC8C32</color>
+    <color name="dev_bck">#FFF1DF</color>
+</resources>
